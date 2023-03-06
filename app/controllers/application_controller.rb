@@ -34,7 +34,7 @@ delete '/meme/:id' do
   memes.destroy
   { message: "Meme removed!" }.to_json
 end
-end # Add your routes here
+ # Add your routes here
 get "/" do
   { message: "Good luck with your project!" }.to_json
   { message: "If laughter is the best medicine, welcome to the GIFTED HANDS!" }.to_json
@@ -69,5 +69,4 @@ delete '/meme/:id' do
   memes = Meme.find(params[:id])
   memes.destroy
   { message: "Meme removed!" }.to_json
-end
 end

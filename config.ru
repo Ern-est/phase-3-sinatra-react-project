@@ -1,4 +1,5 @@
 require_relative "./config/environment"
+Dir.glob('./app/models/*.rb').each { |file| require file }
 
 # Allow CORS (Cross-Origin Resource Sharing) requests
 use Rack::Cors do
