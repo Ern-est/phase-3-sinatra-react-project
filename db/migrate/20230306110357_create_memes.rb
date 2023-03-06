@@ -3,7 +3,7 @@ class CreateMemes < ActiveRecord::Migration[6.1]
     create_table :memes do |t|
       t.string :title
       t.string :description
-      t.integer :user_id
+      t.string :image_url
       t.timestamps
     end
   end
