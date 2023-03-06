@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'bcrypt'
-require 'rack/cors'
+require 'rack-cors'
 require 'json'
 
 require_relative './user.rb'
@@ -92,4 +92,3 @@ post '/memes' do
   else
     { success: false, message: "You must be logged in to create a meme" }.to_json
   end
-end

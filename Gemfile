@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem 'bcrypt', '~> 3.1.7'
+
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
