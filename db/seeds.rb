@@ -1,13 +1,48 @@
 puts "🌱 Seeding spices..."
-require 'faker'
 
 
 # Seed your database here
+require 'open-uri'
 
-  Meme.create(
-    title: "Laughter", 
-    description: "born to laugh", 
-    image_url: "https://images.unsplash.com/photo-1645196541858-fa95649e4f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8TThqVmJMYlRSd3N8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60", 
-    user_id: 1
-  )
+
+# Seed Posts
+Meme.create(
+  title: 'The Latest Tech Trends',
+  description: "Laugh",
+  image_url: 'https://images.unsplash.com/photo-1551094024-7a1a2f2c8217?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  user_id: 1, 
+)
+
+Meme.create(
+  title: 'The Best Soccer Players in the World',
+  description: "fun",
+  image_url: 'https://images.unsplash.com/photo-1593720218705-5a7b5c5e5ecf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  user_id: 2,
+)
+Meme.create(
+  title: 'The Best Soccer Players in the World',
+  description: "fun",
+  image_url: 'https://images.unsplash.com/photo-1593720218705-5a7b5c5e5ecf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  user_id: 2,
+)
+Meme.create(
+  title: 'The Best Soccer Players in the World',
+  description: "fun",
+  image_url: 'https://images.unsplash.com/photo-1593720218705-5a7b5c5e5ecf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  user_id: 2,
+
+)
+Meme.create(
+  title: 'The Best Soccer Players in the World',
+  description: "fun",
+  image_url: 'https://images.unsplash.com/photo-1593720218705-5a7b5c5e5ecf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  user_id: 2,
+
+)
+Meme.create(
+  title: 'The Best Soccer Players in the World',
+  description: "fun",
+  image_url: 'https://images.unsplash.com/photo-1593720218705-5a7b5c5e5ecf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  user_id: 2,
+)
 puts "✅ Done seeding!"
