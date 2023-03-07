@@ -1,11 +1,13 @@
 puts "🌱 Seeding spices..."
+require 'faker'
+
 
 # Seed your database here
-u1 = User.create(username: "Ernest", password: "ern")
-u2 = User.create(username: "cheruiyot", password: "che")
 
-meme1 = Meme.create(user_id: 1, title: "first joke",description:"shit's bout to go down")
-meme2 = Meme.create(user_id: 1, title: "second joke",description:"Alaa!")
-meme3 = Meme.create(user_id: 2, title: "third joke",description:"wollan!")
-
+  Meme.create(
+    title: "Laughter", 
+    description: "born to laugh", 
+    image_url: "https://images.unsplash.com/photo-1645196541858-fa95649e4f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8TThqVmJMYlRSd3N8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60", 
+    user_id: 1
+  )
 puts "✅ Done seeding!"
